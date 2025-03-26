@@ -8,7 +8,6 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: AppBar(title: Text("Home"), centerTitle: true),
       body: Center(
         child: Container(
           margin: EdgeInsets.all(32),
@@ -17,12 +16,15 @@ class HomePage extends StatelessWidget {
             children: [
               Column(
                 children: [
-                  Text("Welcome to Home Page", style: TextStyle(fontSize: 20)),
+                  Text(
+                    "HOME PAGE",
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  ),
                   Text("That's a simple example of BottomNavigationBar"),
                 ],
               ),
               SizedBox(height: 20),
-              ImagesRow()
+              ImagesRow(),
             ],
           ),
         ),

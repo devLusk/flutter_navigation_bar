@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_navigation_bar/components/images_row.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -21,39 +22,7 @@ class HomePage extends StatelessWidget {
                 ],
               ),
               SizedBox(height: 20),
-              Row(
-                children: [
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(15),
-                    child: Image.asset(
-                      'lib/images/image_01.jpg',
-                      width: 200,
-                      height: 200,
-                      fit: BoxFit.cover,
-                    ),
-                  ),
-                  SizedBox(width: 10),
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(15),
-                    child: Image.asset(
-                      'lib/images/image_02.jpg',
-                      width: 200,
-                      height: 200,
-                      fit: BoxFit.cover,
-                    ),
-                  ),
-                  SizedBox(width: 10),
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(15),
-                    child: Image.asset(
-                      'lib/images/image_03.jpg',
-                      width: 200,
-                      height: 200,
-                      fit: BoxFit.cover,
-                    ),
-                  ),
-                ],
-              ),
+              ImagesRow()
             ],
           ),
         ),
